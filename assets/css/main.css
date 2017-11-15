@@ -7,7 +7,7 @@
 	color: white;
 }
 
-.message-description {
+.disappear-animation {
     -webkit-animation: KEYFRAME-NAME 5s infinite;
     -moz-animation:    KEYFRAME-NAME 5s infinite;
     -o-animation:      KEYFRAME-NAME 5s infinite;
