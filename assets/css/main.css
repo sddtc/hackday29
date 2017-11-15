@@ -6,3 +6,36 @@
 .min .keyWord:hover {
 	color: white;
 }
+
+.message-description {
+    -webkit-animation: KEYFRAME-NAME 5s infinite;
+    -moz-animation:    KEYFRAME-NAME 5s infinite;
+    -o-animation:      KEYFRAME-NAME 5s infinite;
+    animation:         KEYFRAME-NAME 5s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        background-color: yellow;
+    }
+    50% {
+        background-color: red;
+    }
+}
+
+@-webkit-keyframes KEYFRAME-NAME {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+}
+@-moz-keyframes KEYFRAME-NAME {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+}
+@-o-keyframes KEYFRAME-NAME {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+}
+@keyframes KEYFRAME-NAME {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+}
