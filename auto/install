@@ -1,0 +1,3 @@
+#! /bin/bash -eu
+
+docker-compose --project-name hackday run _base npm install

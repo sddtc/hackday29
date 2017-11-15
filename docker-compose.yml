@@ -1,0 +1,13 @@
+_base:
+  image: node:9
+  volumes:
+    - .:/anual_report
+    - ~/.ssh:/root/.ssh
+  working_dir: /anual_report
+
+dev:
+  extends:
+    service: _base
+  ports:
+    - 9999:9999
+  command: "npm start"
