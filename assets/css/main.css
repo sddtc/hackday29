@@ -7,6 +7,11 @@
 	color: white;
 }
 
+.message-description p {
+    font-size : 20px;
+}
+
+/* animation */
 .disappear-animation {
     -webkit-animation: KEYFRAME-NAME 5s infinite;
     -moz-animation:    KEYFRAME-NAME 5s infinite;
