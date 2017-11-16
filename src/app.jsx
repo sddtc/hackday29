@@ -1,10 +1,10 @@
 var React = require('react');
 
-var MyDiv = require('./components/my-div');
+var MyDivFirst = require('./components/my-div-first');
 var store = require('./store');
 var {Router} = require('director');
 
-var appElement = document.getElementById('main');
+var appElement = document.getElementById('my-div-first');
 
 var routes = {
     '/report': {
@@ -13,8 +13,12 @@ var routes = {
             let data = report.entity;
             data.id=id
             React.render(
-				<MyDiv data={data}/>,
+				<MyDivFirst data={data}/>,
                 appElement);
+
+            // React.render(
+            //     <MyDivFirst data={data}/>,
+            //     appElement);
         }
 
     }
