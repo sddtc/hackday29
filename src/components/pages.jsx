@@ -9,9 +9,12 @@ var Page6 = require('./page6');
 var Page7 = require('./page7');
 var Page8 = require('./page8');
 var Page9 = require('./page9');
-var Page10 = require('./page10')
+var Page10 = require('./page10');
 var Page11 = require('./page11');
 var Page12 = require('./page12');
+var Page13 = require('./page13');
+var Page14 = require('./page14');
+var Page15 = require('./page15');
 
 
 
@@ -42,14 +45,20 @@ var Pages = React.createClass({
           return <Page7 data={this.props.data}></Page7>
       }else if (this.props.page == 8) {
           return <Page8 data={this.props.data}></Page8>
-      }else if(this.props.page ==9) {
+      }else if (this.props.page == 9) {
           return <Page9 data={this.props.data}></Page9>
-      }else if(this.props.page ==10) {
+      }else if (this.props.page == 10) {
           return <Page10 data={this.props.data}></Page10>
       }else if (this.props.page == 11) {
           return <Page11 data={this.props.data}></Page11>
       }else if (this.props.page == 12) {
           return <Page12 data={this.props.data}></Page12>
+      }else if (this.props.page == 13) {
+          return <Page13 data={this.props.data}></Page13>
+      }else if (this.props.page == 14) {
+          return <Page14 data={this.props.data}></Page14>
+      }else if (this.props.page == 15) {
+          return <Page15 data={this.props.data}></Page15>
       }else{
           return <Page0 data={this.props.data}></Page0>
       }

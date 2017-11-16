@@ -3,7 +3,7 @@ var React = require('react');
 var Page11 = React.createClass({
     render: function () {
         const maskStyle = {opacity: 0.2};
-        const bgStyle = {background: '#f9c40f'}
+        const bgStyle = {background: '#f9c40f'};
         return (
             <div className="section top-10-widget " data-anchor="11">
 

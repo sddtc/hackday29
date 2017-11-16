@@ -1,13 +1,13 @@
 var React = require('react');
 
-var Page10 = React.createClass({
+var Page13 = React.createClass({
     render: function () {
-        const maskStyle = {opacity: 0.5};
+        const maskStyle = {opacity: 0.2};
         return (
-            <div className="section top-10-widget " data-anchor="10">
+            <div className="section top-10-widget " data-anchor="13">
 
                 <div className="bg enable-animate">
-                    <div data-src="assets/images/last-login.jpg" className="bg-img"></div>
+                    <div data-src="assets/images/shared.jpg" className="bg-img"></div>
                     <div className="mask" style={maskStyle}></div>
                     <div className="bottom-mask"></div>
                 </div>
@@ -16,14 +16,14 @@ var Page10 = React.createClass({
                     <div className="top-section clearfix ">
 
                         <div className="clearfix ">
-                            <div className="title-section-wrapper right">
-                                <table className="title-section right">
+                            <div className="title-section-wrapper left">
+                                <table className="title-section left">
                                     <tbody>
                                     <tr className="top-column">
                                         <td colspan="2">
                                             <div className="title clearfix">
-                                                <div className="top-title">2017.**.**</div>
-                                                <div className="bottom-title">You must slept late.</div>
+                                                <div className="top-title">2017 How Many</div>
+                                                <div className="bottom-title">Times You Have Shared</div>
                                             </div>
                                         </td>
                                     </tr>
@@ -31,9 +31,12 @@ var Page10 = React.createClass({
                                         <td className="title-content-wrapper">
                                             <div className="sub-title-wrapper clearfix">
                                                 <div className="sub-title">
-                                                    <h2 className="min keyWord animated infinite bounceInDown">
-                                                        {this.props.data.latest_visited_at}
+                                                    <h2 className="min keyWord animated infinite rubberBand" >
+                                                        {this.props.data.sns_shared_count}
                                                     </h2>
+                                                    <h3 className="min">
+                                                        times
+                                                    </h3>
                                                 </div>
                                             </div>
                                         </td>
@@ -44,13 +47,10 @@ var Page10 = React.createClass({
                         </div>
                         <div className="description-section message-description">
                             <p className="description">
-                                It's already {this.props.data.latest_visited_at} am but you're still viewing properties.
+                                You have shared so many times to social platform.
                             </p>
                             <p className="description">
-                                Warm hint:
-                            </p>
-                            <p className="description">
-                                &nbsp;&nbsp;&nbsp;&nbsp;we know our website is really attractive, but go to bed early is good for your health.
+                                Thanks for your recognition, we will continue growing!
                             </p>
                         </div>
                     </div>
@@ -58,10 +58,11 @@ var Page10 = React.createClass({
                         <div className="horizontal-line"></div>
                     </div>
                 </div>
+
                 <img src="./assets/images/down.png" alt="Down" className="down-btn"/>
             </div>
         );
     }
 });
 
-module.exports = Page10;
+module.exports = Page13;
