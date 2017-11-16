@@ -1,25 +1,22 @@
 var React = require('react');
 
-var MyDivFirst = require('./components/my-div-first');
+var Pages = require('./components/pages');
 var store = require('./store');
 var {Router} = require('director');
 
-var appElement = document.getElementById('my-div-first');
+var appElement = document.getElementById('main');
+
 
 var routes = {
     '/report': {
-        '/:id': async function(id) {
-            let report = await store.getReport(id);
-            let data = report.entity;
-            data.id=id
-            React.render(
-				<MyDivFirst data={data}/>,
-                appElement);
-
-            // React.render(
-            //     <MyDivFirst data={data}/>,
-            //     appElement);
-        }
+            '/:id': async function(id) {
+                let report = await store.getReport(id);
+                let reportEntity = report.entity;
+                reportEntity.id=id;
+                React.render(
+                    <Pages data={reportEntity}> </Pages>,
+                    appElement);
+            }
 
     }
 };
