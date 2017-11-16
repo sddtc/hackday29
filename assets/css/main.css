@@ -69,6 +69,11 @@ h1.loader {
     animation: loading 0.85s ease-in-out infinite alternate;
 }
 
+.animated.bounceIn,
+.animated.bounceInDown {
+    animation-duration: 2s;
+}
+
 @keyframes loading {
     to {text-shadow:
             0 0 2px rgba(213, 75, 64, 0.8),
