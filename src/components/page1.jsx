@@ -16,7 +16,7 @@ var Page1 = React.createClass({
                 <div className="top-section clearfix ">
 
                     <div className="clearfix ">
-                        <div className="title-section-wrapper left shake-crazy shake-freeze">
+                        <div className="title-section-wrapper left">
                             <table className="title-section left">
                                 <tbody>
                                 <tr className="top-column">
