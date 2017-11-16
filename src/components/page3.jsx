@@ -74,6 +74,8 @@ var Page3 = React.createClass({
                             </div>
                         </div>
                     </div>
+
+                    <img src="./assets/images/down.png" alt="Down" className="down-btn"></img>
                 </div>
             );
         },

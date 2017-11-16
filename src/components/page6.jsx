@@ -59,6 +59,8 @@ var Page6 = React.createClass({
                         <div className="horizontal-line"></div>
                     </div>
                 </div>
+
+                <img src="./assets/images/down.png" alt="Down" className="down-btn"></img>
             </div>
         );
     },
