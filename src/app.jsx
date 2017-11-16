@@ -43,13 +43,14 @@ var router = Router(routes);
 router.init();
 
 document.addEventListener('keydown', function (event) {
-    //up
     if (event.keyCode == 40) {
+        //down
         pageIndex = pageIndex + 1;
         location.href = "#/report/" + consumerId + "/" + pageIndex
     } else if (event.keyCode == 38) {
-        //down
+        //up
         pageIndex = parseInt(pageIndex) > 0 ? pageIndex - 1 : pageIndex;
+        location.href = "#/report/" + consumerId + "/" + pageIndex
     }
     console.log("pageIndex=" + pageIndex)
 });
