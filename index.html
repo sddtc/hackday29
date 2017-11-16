@@ -41,8 +41,8 @@
     </script>
 </head>
 
-<body id="loading1">
-
+<body id="loading">
+<audio id="bgm-audio" src="./assets/audio/p2103835_128k.mp4" preload="none" autoplay controls style="display: none;"></audio>
 <div class="msk">
     <div class="wp">
         <img src="./assets/images/title.png" />
@@ -55,7 +55,10 @@
         </a>
         <a target="_blank" href="https://www.realestate.com.au/buy" class="title">REA</a>
         <span class="sub-title">2017 Annual Report</span>
-        <span class="label counter"></span>
+        <span class="vertical-line"></span>
+
+        <img src="assets/images/musicIcon.gif" alt="Icon" id="musicIcon">
+        <span id="background-music" class="label" onclick="controlMusic()">Praying For Time</span>
     </div>
 </header>
 
@@ -64,5 +67,24 @@
 <div id="back-to-top"></div>
 
 <script src="/javascripts/app.js"></script>
+
+<script>
+    var play = true;
+
+function controlMusic() {
+    if(play) {
+        document.getElementById('bgm-audio').pause();
+        play = false;
+    } else {
+        play = true;
+        playMusic();
+    }
+}
+
+function playMusic() {
+    document.getElementById('bgm-audio').play();
+}
+</script>
+
 </body>
 </html>
