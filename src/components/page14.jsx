@@ -43,12 +43,17 @@ var Page14 = React.createClass({
                             </div>
                         </div>
                         <div className="description-section message-description">
-                            <p className="description">
-                                You contact this agent most frequently, they must have a good service.
-                            </p>
-                            <p className="description">
-                                Hope you could get enough information here!
-                            </p>
+                            <div className="oneLine">
+                                <p className="description">You contact this agent most&nbsp;</p>
+                                <p className="n1">frequently</p>
+                                <p>, they must have a</p>
+                            </div>
+                            <p>good service.</p>
+                            <div className="oneLine">
+                                <p className="description">Hope you could get enough&nbsp;</p>
+                                <p className="n1">information</p>
+                                <p>&nbsp;here!</p>
+                            </div>
                         </div>
                     </div>
                     <div className="bottom-section">
