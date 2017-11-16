@@ -10,7 +10,7 @@ var store={};
 // };
 
 store.getReport = function(id){
-  return client({method:'GET', path: 'fake_response.json'});
+  return client({method:'GET', path: id + '.json'});
 };
 
 module.exports = store;

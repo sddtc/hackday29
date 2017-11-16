@@ -47,7 +47,7 @@ var Page3 = React.createClass({
                                                 <div className="sub-title-wrapper clearfix">
                                                     <div className="sub-title">
                                                         <h2 className="min shake-slow shake-constant shake-constant--hover">
-                                                            <a target="_blank" className="keyWord" href={this._favorite().listing_url}>{this._favorite().listing_id}</a>
+                                                            <a target="_blank" className="keyWord" href={this._favorite().listing_url}>{this._favorite().listing_address}</a>
                                                         </h2>
                                                     </div>
                                                 </div>
