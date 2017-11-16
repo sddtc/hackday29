@@ -36,7 +36,7 @@ var Page13 = React.createClass({
                                             <div className="sub-title-wrapper clearfix">
                                                 <div className="sub-title">
                                                     <h2 className="min keyWord animated infinite rubberBand" >
-                                                        {this.props.data.sns_shared_count}
+                                                        {this.props.data.sns_shared_count*110}
                                                     </h2>
                                                     <h3 className="min">
                                                         times

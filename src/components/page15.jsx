@@ -31,6 +31,9 @@ var Page15 = React.createClass({
                             <span>o</span>
                             <span>u</span>
                         </h1>
+
+                        <img src="assets/images/rea-logo-end-page.png" alt="Icon" />
+
                         <div className="text-wrapper">
                             <div className="text message-description" data-selector="p">
                                 <p>Looking back at 2017, REA brings us surprise and touch.</p>

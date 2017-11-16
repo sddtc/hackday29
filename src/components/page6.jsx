@@ -72,7 +72,7 @@ var Page6 = React.createClass({
         );
     },
     _search_count: function(){
-        return this.props.data.search_count_by_type.buy + this.props.data.search_count_by_type.rent + this.props.data.search_count_by_type.invest
+        return (this.props.data.search_count_by_type.buy + this.props.data.search_count_by_type.rent + this.props.data.search_count_by_type.invest)*110
     }
 });
 

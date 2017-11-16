@@ -37,7 +37,7 @@ var Page5 = React.createClass({
                                             <div className="sub-title-wrapper clearfix">
                                                 <div className="sub-title">
                                                     <h2 className="min keyWord animated infinite fadeInLeft" >
-                                                        {this.props.data.save_search_count}
+                                                        {this.props.data.save_search_count*10}
                                                     </h2>
                                                     <h3 className="min">
                                                         saved searches
