@@ -53,6 +53,7 @@ h1.loader {
     font-size: 4.6875em;
     color: transparent;
     letter-spacing: 0.01em;
+    padding-bottom: 30px;
 }
 
 .loader span {
