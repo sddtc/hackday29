@@ -14,11 +14,16 @@ var consumerId = 0;
 var routes = {
     '/report': {
         '/:id': {
-            '/:pageId': function (id, pageId) {
+            '/:pageId': async function (id, pageId) {
                 consumerId = id;
                 pageIndex= parseInt(pageId);
+
+
+                let report = await store.getReport(consumerId);
+                let reportEntity = report.entity
+
                 React.render(
-                    <Pages consumer={consumerId} page={pageId}> </Pages>,
+                    <Pages data={reportEntity} consumer={consumerId} page={pageId}> </Pages>,
                     appElement);
 
                 var remover = document.querySelector('#index-script');
