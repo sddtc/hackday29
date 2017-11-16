@@ -49,15 +49,19 @@ var Page4 = React.createClass({
                         </div>
                     </div>
                     <div className="description-section message-description">
-                        <p className="description">
-                            Thanks for trusting REA, for spending time on REA.
-                        </p>
-                        <p className="description">
-                            With your company, REA grows faster.
-                        </p>
-                        <p className="description">
-                            And with REA's company, you could reap happiness!
-                        </p>
+                        <div className="oneLine">
+                            <p className="description">
+                                Thanks for&nbsp;
+                            </p>
+                            <p className="n1"> trusting</p>
+                            <p>REA&nbsp;,</p>
+                            <p className="description">
+                              for spending time on REA. With your company, REA grows faster.
+                            </p>
+                            <p className="description">
+                                And with REA's company, you could reap happiness!
+                            </p>
+                        </div>
                     </div>
                 </div>
                 <div className="bottom-section">
