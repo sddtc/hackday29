@@ -44,19 +44,19 @@ var Pages = React.createClass({
                 return <Page7 data={this._getData()}></Page7>
             } else if (this._getPageNo() == 8) {
                 return <Page8 data={this._getData()}></Page8>
-            } else if (this.props.page == 9) {
+            } else if (this._getPageNo() == 9) {
                 return <Page9 data={this._getData()}></Page9>
-            } else if (this.props.page == 10) {
+            } else if (this._getPageNo() == 10) {
                 return <Page10 data={this._getData()}></Page10>
-            } else if (this.props.page == 11) {
+            } else if (this._getPageNo() == 11) {
                 return <Page11 data={this._getData()}></Page11>
-            } else if (this.props.page == 12) {
+            } else if (this._getPageNo() == 12) {
                 return <Page12 data={this._getData()}></Page12>
-            } else if (this.props.page == 13) {
+            } else if (this._getPageNo() == 13) {
                 return <Page13 data={this._getData()}></Page13>
-            } else if (this.props.page == 14) {
+            } else if (this._getPageNo() == 14) {
                 return <Page14 data={this._getData()}></Page14>
-            } else if (this.props.page == 15) {
+            } else if (this._getPageNo() == 15) {
                 return <Page15 data={this._getData()}></Page15>
             } else {
                 return <Page0 data={this._getData()}></Page0>
