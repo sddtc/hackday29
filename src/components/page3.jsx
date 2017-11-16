@@ -83,7 +83,6 @@ var Page3 = React.createClass({
         _favorite: function () {
             return this.properties()[0];
         }
-    })
-    ;
+    });
 
 module.exports = Page3;
