@@ -6,11 +6,11 @@ var Page10 = React.createClass({
         return (
             <div className="section top-10-widget " data-anchor="10">
 
-                <div className="bg enable-animate">
+                <img className="bg enable-animate cb-slideshow">
                     <div data-src="assets/images/last-login.jpg" className="bg-img"></div>
                     <div className="mask" style={maskStyle}></div>
                     <div className="bottom-mask"></div>
-                </div>
+                </img>
 
                 <div className="content wrapper">
                     <div className="top-section clearfix ">

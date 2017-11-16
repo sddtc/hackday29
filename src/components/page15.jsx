@@ -6,8 +6,8 @@ var Page15 = React.createClass({
         return (
             <div className="section end-page-widget" data-anchor="15">
 
-                <div className="bg enable-animate">
-                    <div data-src="https://img3.doubanio.com/f/movie/094989aabe419e1b90a2ba84b771140132419208/deploy/movie/movie10th-deploy/pics/bg/p8.jpg" className="bg-img"></div>
+                <div className="bg enable-animate cb-slideshow">
+                    <img data-src="https://img3.doubanio.com/f/movie/094989aabe419e1b90a2ba84b771140132419208/deploy/movie/movie10th-deploy/pics/bg/p8.jpg" className="bg-img"></img>
                     <div className="mask" style={maskStyle}></div>
                     <div className="bottom-mask"></div>
                 </div>

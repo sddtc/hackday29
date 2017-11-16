@@ -19,8 +19,8 @@ var routes = {
                 pageIndex= parseInt(pageId);
 
 
-                let report = await store.getReport(consumerId);
-                let reportEntity = report.entity
+                // let report = await store.getReport(consumerId);
+                let reportEntity = "{}"
 
                 React.render(
                     <Pages data={reportEntity} consumer={consumerId} page={pageId}> </Pages>,

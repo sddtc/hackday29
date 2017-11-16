@@ -3,11 +3,12 @@ var React = require('react');
 var Page1 = React.createClass({
 
   render: function(){
-      const maskStyle={opacity: 0.5};
+      const maskStyle={opacity: 0.1};
+
     return (
         <div className="section top-10-widget " data-anchor="1">
-            <div className="bg enable-animate">
-                <div data-src="assets/images/landing-times.jpg" className="bg-img"></div>
+            <div className="bg enable-animate cb-slideshow">
+                <img data-src="assets/images/landing-times.jpg" className="bg-img"></img>
                 <div className="mask" style={maskStyle}></div>
                 <div className="bottom-mask"></div>
             </div>

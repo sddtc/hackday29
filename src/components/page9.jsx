@@ -6,8 +6,8 @@ var Page9 = React.createClass({
         return (
             <div className="section top-10-widget " data-anchor="9">
 
-                <div className="bg enable-animate">
-                    <div data-src="assets/images/notification.jpg" className="bg-img"></div>
+                <div className="bg enable-animate cb-slideshow">
+                    <img data-src="assets/images/notification.jpg" className="bg-img"></img>
                     <div className="mask" style={maskStyle}></div>
                     <div className="bottom-mask"></div>
                 </div>
