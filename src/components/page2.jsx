@@ -46,7 +46,10 @@ var Page2 = React.createClass({
                         <p className="description">
                             It was a sunny day with blue sky and breeze.
                         </p>
-                        <p>You came here to join us.</p>
+                        <div className="oneLine">
+                             <p>You came here to&nbsp;</p>
+                             <p>join us.</p>
+                         </div>
                         <p>From that day onwards, we would accompany you through the wonderful days. </p>
                     </div>
                 </div>
