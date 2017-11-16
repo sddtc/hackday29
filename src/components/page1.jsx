@@ -1,8 +1,9 @@
 var React = require('react');
 
 var Page1 = React.createClass({
+
   render: function(){
-      const maskStyle={opacity: 0.5}
+      const maskStyle={opacity: 0.5};
     return (
         <div className="section top-10-widget " data-anchor="1">
 

@@ -6,17 +6,24 @@ var {Router} = require('director');
 
 var appElement = document.getElementById('main');
 
+var pageIndex = 0;
+
+var consumerId = 0;
+
 
 var routes = {
     '/report': {
-            '/:id': async function(id) {
+        '/:id': {
+            '/:pageId': async function (id, pageId) {
+                consumerId = id;
                 let report = await store.getReport(id);
                 let reportEntity = report.entity;
-                reportEntity.id=id;
+                reportEntity.id = id;
                 React.render(
-                    <Pages data={reportEntity}> </Pages>,
+                    <Pages data={reportEntity} page={pageId} key={pageId}> </Pages>,
                     appElement);
             }
+        }
 
     }
 };
@@ -24,3 +31,16 @@ var routes = {
 var router = Router(routes);
 
 router.init();
+
+document.addEventListener('keydown', function (event) {
+    //up
+    if (event.keyCode == 38) {
+        pageIndex = pageIndex + 1;
+        location.href = "#/report/" + consumerId + "/" + pageIndex
+    } else if (event.keyCode == 40) {
+        //down
+        pageIndex = pageIndex > 0 ? pageIndex - 1 : pageIndex;
+        location.href = "#/report/" + consumerId + "/" + pageIndex
+    }
+    console.log("pageIndex=" + pageIndex)
+});

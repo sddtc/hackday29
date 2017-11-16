@@ -6,4 +6,4 @@
 ```
 
 ## get report data example
-http://localhost:9999/back_index.html#/report/1
+http://localhost:9999/#/report/1/#{page_index}
