@@ -5,14 +5,14 @@ var Page3 = React.createClass({
         render: function () {
             const maskStyle = {opacity: 0.1};
             var propertiesCom = this.properties().map((p, i) => {
-                return  <a target="_blank" href={p.listing_url} className="subject " data-title={p.listing_id}>
+                return  <a target="_blank" href={p.listing_url.href} className="subject " data-title={p.listing_address}>
                     <span className="num">{i + 1}</span>
                     <div className="img">
-                        <img data-src={p.listing_main_photo} src={"//:" + i} alt={p.listing_id}/>
+                        <img data-src={p.listing_main_photo} src={"//:" + i} alt={p.listing_address}/>
                     </div>
                     <div className="cover">
                         <div className="cover-inner">
-                            <p>{p.listing_id}</p>
+                            <p>{p.listing_address}</p>
                         </div>
                     </div>
                 </a>
@@ -47,7 +47,7 @@ var Page3 = React.createClass({
                                                 <div className="sub-title-wrapper clearfix">
                                                     <div className="sub-title">
                                                         <h2 className="min shake-slow shake-constant shake-constant--hover">
-                                                            <a target="_blank" className="keyWord" href={this._favorite().listing_url}>{this._favorite().listing_address}</a>
+                                                            <a target="_blank" className="keyWord" href={this._favorite().listing_url.href}>{this._favorite().listing_address}</a>
                                                         </h2>
                                                     </div>
                                                 </div>

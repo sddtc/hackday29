@@ -32,7 +32,7 @@ var Page2 = React.createClass({
                                         <div className="sub-title-wrapper clearfix">
                                             <div className="sub-title">
                                                 <h2 className="min keyWord animated infinite wobble">
-                                                    {this.props.data.account_created_at}
+                                                    {this.props.data.account_created_at.substring(0, 10)} {this.props.data.account_created_at.substring(11, 19)}
                                                 </h2>
                                             </div>
                                         </div>
