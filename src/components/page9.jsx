@@ -55,9 +55,11 @@ var Page9 = React.createClass({
                             <p className="description">
                                 You get some property updates or some saved search notifications.
                             </p>
-                            <p className="description">
-                                We try to let you know all the valuables things!
-                            </p>
+                            <div className="oneLine">
+                                <p className="description">We try to let you know all the&nbsp;</p>
+                                <p className="n1">valuables</p>
+                                <p>&nbsp;things!</p>
+                            </div>
                         </div>
                     </div>
                     <div className="bottom-section">

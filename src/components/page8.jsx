@@ -46,12 +46,17 @@ var Page8 = React.createClass({
                             </div>
                         </div>
                         <div className="description-section message-description">
-                            <p className="description">
-                                As you know, collection is a new feature this year, and I'm pretty sure you won't miss it!
-                            </p>
-                            <p className="description">
-                                Let's improve together!
-                            </p>
+                            <div className="oneLine">
+                                <p className="description">As you know, collection is a&nbsp;</p>
+                                <p className="n1">new</p>
+                                <p>&nbsp;feature this year,</p>
+                            </div>
+                            <p>and I'm pretty sure you won't miss it!</p>
+                            <div className="oneLine">
+                                <p className="description">Let's&nbsp;</p>
+                                <p className="n1">improve</p>
+                                <p>&nbsp;together!</p>
+                            </div>
                         </div>
                     </div>
                     <div className="bottom-section">
