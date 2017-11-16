@@ -1,9 +1,9 @@
 _base:
   image: node:9
   volumes:
-    - .:/anual_report
+    - .:/annual_report
     - ~/.ssh:/root/.ssh
-  working_dir: /anual_report
+  working_dir: /annual_report
 
 dev:
   extends:
