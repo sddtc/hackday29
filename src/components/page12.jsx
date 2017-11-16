@@ -43,9 +43,11 @@ var Page12 = React.createClass({
                             </div>
                         </div>
                         <div className="description-section message-description">
-                            <p className="description">
-                                Based on your search, we analysed that your favorite property type is {this.props.data.preferred_property_type}.
-                            </p>
+                            <p className="description">Based on your search, we analysed that your favorite&nbsp;</p>
+                            <div className="oneLine">
+                                <p className="n1">property type</p>
+                                <p>&nbsp;is {this.props.data.preferred_property_type}.</p>
+                            </div>
                         </div>
                     </div>
                     <div className="bottom-section">

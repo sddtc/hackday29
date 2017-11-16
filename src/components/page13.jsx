@@ -46,12 +46,15 @@ var Page13 = React.createClass({
                             </div>
                         </div>
                         <div className="description-section message-description">
-                            <p className="description">
-                                You have shared so many times to social platform.
-                            </p>
-                            <p className="description">
-                                Thanks for your recognition, we will continue growing!
-                            </p>
+                            <div className="oneLine">
+                                <p className="description">You have shared so many times to&nbsp;</p>
+                                <p className="n1">social platform</p><p>.</p>
+                            </div>
+                            <div className="oneLine">
+                                <p className="description">Thanks for your&nbsp;</p>
+                                <p className="n1">recognition</p>
+                                <p>, we will continue growing!</p>
+                            </div>
                         </div>
                     </div>
                     <div className="bottom-section">
