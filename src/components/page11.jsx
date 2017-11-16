@@ -46,9 +46,10 @@ var Page11 = React.createClass({
                             </div>
                         </div>
                         <div className="description-section message-description">
-                            <p className="description">
-                                What you searched most are all located in this district.
-                            </p>
+                            <div className="oneLine">
+                                <p className="description">What you searched most are all located in this&nbsp;</p>
+                                <p className="n1">district</p><p>.</p>
+                            </div>
                             <p className="description">
                                 We will continue keep you in touch for updates about this district!
                             </p>

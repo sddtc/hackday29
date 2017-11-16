@@ -46,12 +46,14 @@ var Page10 = React.createClass({
                             <p className="description">
                                 It's already {this.props.data.latest_visited_at.substring(11,19)} AM but you're still viewing properties.
                             </p>
-                            <p className="description">
+                            <p className="n1">
                                 Warm hint:
                             </p>
-                            <p className="description">
-                                &nbsp;&nbsp;&nbsp;&nbsp;we know our website is really attractive, but go to bed early is good for your health.
-                            </p>
+                            <div className="oneLine">
+                                <p className="description">&nbsp;&nbsp;&nbsp;&nbsp;we know our website is really&nbsp;</p>
+                                <p className="n1">attractive</p><p>,</p>
+                            </div>
+                                <p>but go to bed early is good for your health.</p>
                         </div>
                     </div>
                     <div className="bottom-section">
