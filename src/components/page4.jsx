@@ -2,16 +2,15 @@ var React = require('react');
 
 var Page4 = React.createClass({
   render: function(){
-      const maskStyle={opacity: 0.1};
-      const bgStyle={background: '#f9c40f'}
+      const maskStyle={opacity: 0.5};
     return (
-        <div className="section top-10-widget " data-anchor="5">
+        <div className="section top-10-widget " data-anchor="4">
 
 
 
 
-            <div className="bg enable-animate" style={bgStyle}>
-                <div data-src="https://img1.doubanio.com/view/activity_page/raw/public/p278.jpg" className="bg-img"></div>
+            <div className="bg enable-animate">
+                <div data-src="assets/images/times.jpg" className="bg-img"></div>
                 <div className="mask" style={maskStyle}></div>
                 <div className="bottom-mask"></div>
             </div>
@@ -26,8 +25,8 @@ var Page4 = React.createClass({
                                 <tr className="top-column">
                                     <td colspan="2">
                                         <div className="title clearfix">
-                                            <div className="top-title">2017 How Much Time</div>
-                                            <div className="bottom-title">You Spent On REA</div>
+                                            <div className="top-title">2017 How Much</div>
+                                            <div className="bottom-title">Time You Spent On REA</div>
                                         </div>
                                     </td>
                                 </tr>
@@ -35,9 +34,12 @@ var Page4 = React.createClass({
                                     <td className="title-content-wrapper">
                                         <div className="sub-title-wrapper clearfix">
                                             <div className="sub-title">
-                                                <h2 className="min">
-                                                    {this.props.data.time_spend_on_rea} Hours
+                                                <h2 className="min keyWord animated infinite swing" >
+                                                    {this.props.data.time_spend_on_rea}
                                                 </h2>
+                                                <h3 className="min">
+                                                    hours
+                                                </h3>
                                             </div>
                                         </div>
                                     </td>
@@ -46,8 +48,16 @@ var Page4 = React.createClass({
                             </table>
                         </div>
                     </div>
-                    <div className="description-section ">
-                        <span className="description">Thanks for trusting REA, for spending time on REA. With your company, REA grows faster. And with REA's company, you could reap happiness! </span>
+                    <div className="description-section message-description">
+                        <p className="description">
+                            Thanks for trusting REA, for spending time on REA.
+                        </p>
+                        <p className="description">
+                            With your company, REA grows faster.
+                        </p>
+                        <p className="description">
+                            And with REA's company, you could reap happiness!
+                        </p>
                     </div>
                 </div>
                 <div className="bottom-section">

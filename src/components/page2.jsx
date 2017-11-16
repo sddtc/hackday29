@@ -31,7 +31,7 @@ var Page2 = React.createClass({
                                     <td className="title-content-wrapper">
                                         <div className="sub-title-wrapper clearfix">
                                             <div className="sub-title">
-                                                <h2 className="min keyWord">
+                                                <h2 className="min keyWord animated infinite wobble">
                                                     {this.props.data.account_created_at}
                                                 </h2>
                                             </div>
@@ -42,8 +42,12 @@ var Page2 = React.createClass({
                             </table>
                         </div>
                     </div>
-                    <div className="description-section ">
-                        <span className="description">It was a sunny day with blue sky and breeze. You came here to join us. From that day onwards, we would accompany you through the wonderful days. </span>
+                    <div className="description-section message-description">
+                        <p className="description">
+                            It was a sunny day with blue sky and breeze.
+                        </p>
+                        <p>You came here to join us.</p>
+                        <p>From that day onwards, we would accompany you through the wonderful days. </p>
                     </div>
                 </div>
                 <div className="bottom-section">
