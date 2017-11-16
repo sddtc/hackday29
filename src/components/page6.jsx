@@ -50,9 +50,11 @@ var Page6 = React.createClass({
                             <p className="description">
                                 You have searched so many times through the whole year.
                             </p>
-                            <p className="description">
-                                Pretty sure you could get what you want here!
-                            </p>
+                            <div className="oneLine">
+                                <p className="description">Pretty sure you could get&nbsp;</p>
+                                <p className="n1">what you want</p>
+                                <p>&nbsp;here!</p>
+                            </div>
                         </div>
                     </div>
                     <div className="bottom-section">

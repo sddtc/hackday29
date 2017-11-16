@@ -45,9 +45,13 @@ var Page7 = React.createClass({
                             </div>
                         </div>
                         <div className="description-section message-description">
-                            <p className="description">
-                                Your responsibility is just to save the properties you are interested, and leave other things to us, we will get you updated without delay!
-                            </p>
+                            <p className="description">Your responsibility is just to save the properties you are interested,</p>
+                            <p>and leave other things to us,</p>
+                            <div className="oneLine">
+                                <p>we will&nbsp;</p>
+                                <p className="n1">get you updated</p>
+                                <p>&nbsp;without delay!</p>
+                            </div>
                         </div>
                     </div>
                     <div className="bottom-section">
