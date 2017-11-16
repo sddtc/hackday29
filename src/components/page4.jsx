@@ -58,7 +58,7 @@ var Page4 = React.createClass({
                             <p className="description">
                             And with REA's company, you could reap&nbsp;
                             </p>
-                            <p className="n1">happiness!</p>
+                            <p className="n1">happiness</p><p>!</p>
                         </div>
                     </div>
                 </div>

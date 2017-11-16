@@ -57,7 +57,7 @@ var Page9 = React.createClass({
                             </p>
                             <div className="oneLine">
                                 <p className="description">We try to let you know all the&nbsp;</p>
-                                <p className="n1">valuables</p>
+                                <p className="n1">valuable</p>
                                 <p>&nbsp;things!</p>
                             </div>
                         </div>

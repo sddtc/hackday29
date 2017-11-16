@@ -8,5 +8,5 @@ var api_remote = 'http://s3-ap-southeast-2.amazonaws.com/ncis-annual-summary-buc
 var client =
       rest.wrap(mime, {mime:'application/json'})
       .wrap(errorCode, { code: 500 })
-      .wrap(pathPrefix, { prefix: api_remote })
+      .wrap(pathPrefix, { prefix: api_remote });
 module.exports = client;
