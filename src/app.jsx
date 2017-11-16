@@ -42,15 +42,22 @@ var router = Router(routes);
 
 router.init();
 
+function goDown() {
+    pageIndex = pageIndex + 1;
+    location.href = "#/report/" + consumerId + "/" + pageIndex
+}
+
+function goUp() {
+    pageIndex = parseInt(pageIndex) > 0 ? pageIndex - 1 : pageIndex;
+    location.href = "#/report/" + consumerId + "/" + pageIndex
+}
+
 document.addEventListener('keydown', function (event) {
     if (event.keyCode == 40) {
         //down
-        pageIndex = pageIndex + 1;
-        location.href = "#/report/" + consumerId + "/" + pageIndex
+        goDown()
     } else if (event.keyCode == 38) {
         //up
-        pageIndex = parseInt(pageIndex) > 0 ? pageIndex - 1 : pageIndex;
-        location.href = "#/report/" + consumerId + "/" + pageIndex
+        goUp()
     }
-    console.log("pageIndex=" + pageIndex)
 });
