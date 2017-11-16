@@ -17,12 +17,12 @@ var routes = {
             '/:pageId': async function (id, pageId) {
                 id = 1000001;
                 consumerId = id;
-                pageIndex=pageId;
-                let report = await store.getReport(id);
-                let reportEntity = report.entity;
-                reportEntity.id = id;
+                pageIndex= parseInt(pageId);
+                // let report = await store.getReport(id);
+                // let reportEntity = report.entity;
+                // reportEntity.id = id;
                 React.render(
-                    <Pages data={reportEntity} page={pageId} key={pageId}> </Pages>,
+                    <Pages consumer={consumerId} page={pageId}> </Pages>,
                     appElement);
             }
         }
@@ -36,10 +36,10 @@ router.init();
 
 document.addEventListener('keydown', function (event) {
     //up
-    if (event.keyCode == 38) {
+    if (event.keyCode == 40) {
         pageIndex = pageIndex + 1;
         location.href = "#/report/" + consumerId + "/" + pageIndex
-    } else if (event.keyCode == 40) {
+    } else if (event.keyCode == 38) {
         //down
         pageIndex = pageIndex > 0 ? pageIndex - 1 : pageIndex;
         location.href = "#/report/" + consumerId + "/" + pageIndex
