@@ -6,8 +6,8 @@
     <title>REA 2017 Annual Report</title>
     <link rel="stylesheet" href="https://img3.doubanio.com/f/ithil/413acbb5d87bd8bb9b1e4537bf0efcee0d6e5ecf/css/activity/star.css">
     <link rel="stylesheet" href="https://img3.doubanio.com/f/ithil/72bdd61eb864b08c0f1426055633ab2c17c9662f/css/lib/animate.css">
-    <link rel="stylesheet" href="https://img3.doubanio.com/f/ithil/e7bf526826fcc0bf4be9efab06ec6e8de3beec0b/css/activity/index.css">
     <link rel="stylesheet" href="https://img3.doubanio.com/f/ithil/d2adc1e9cf8e88f5ce14314fa3f0890238307344/css/activity/responsive.css">
+    <link rel="stylesheet" href="https://img3.doubanio.com/f/ithil/e7bf526826fcc0bf4be9efab06ec6e8de3beec0b/css/activity/index.css">
     <meta name="activity_id" content="1" />
     <meta name="activity_kind" content="0" />
     <meta property="og:site_name" content="douban.com" />
@@ -19,9 +19,29 @@
     <script type="text/javascript" src="https://img3.doubanio.com/f/shire/77323ae72a612bba8b65f845491513ff3329b1bb/js/do.js" data-cfg-autoload="false"></script>
     <!--custom-->
     <link rel="stylesheet" type="text/css" href="./assets/css/csshake.min.css">
+
+    <script type="text/javascript">
+        var isMobile = 'False' === 'True';
+        var DB_CONF = {
+            isLogin: 'True' === 'True'
+        };
+
+        Do.add('jquery', {path: 'https://img3.doubanio.com/f/ithil/e9d9543ebc06f2964039a2e94898f84ce77fc070/js/lib/jquery.js', type: 'js'});
+        Do.add('transform', {path: 'https://img3.doubanio.com/f/ithil/b90a614f90721bdd28eacd7475961c5033c67228/js/lib/jquery.transform2d.js', type: 'js'});
+        Do.add('pause', {path: 'https://img3.doubanio.com/f/ithil/edd388d346d4f7f2a54b27ec60d7d50dacb69dc5/js/lib/jquery.pause.min.js', type: 'js'});
+        Do.add('touchSwipe', {path: 'https://img3.doubanio.com/f/ithil/27365d2741dbe06ccb3ef29f6d2c9688f46f9ed9/js/lib/jquery.touchSwipe.min.js', type: 'js'});
+        Do.add('keyframes', {path: 'https://img3.doubanio.com/f/ithil/28e920e4ad49ce913f7a64967bf45720af82a7eb/js/lib/jquery.keyframes.min.js', type: 'js'});
+        Do.add('easings', {path: 'https://img3.doubanio.com/f/ithil/3d1cab7cd2d1c80a668b3e544660ae5b5a0363d6/js/lib/jquery.easings.min.js', type: 'js'});
+        Do.add('lettering', {path: 'https://img3.doubanio.com/f/ithil/9e89a4428075e6c1aac5280e65d03b7ba3f5595e/js/lib/jquery.lettering.js', type: 'js'});
+        Do.add('textillate', {path: 'https://img3.doubanio.com/f/ithil/41dea21f8ccf5226b39322d9a337c69b50c40b8c/js/lib/jquery.textillate.js', type: 'js', requires:['lettering']});
+        Do.add('slimscroll', {path: 'https://img3.doubanio.com/f/ithil/89147b622b289281b542d80d6773765762f742ee/js/lib/jquery.slimscroll.min.js', type: 'js'});
+        Do.add('fullPage', {path: 'https://img3.doubanio.com/f/ithil/239335012508e5e0ac83697970e89adf5621aa93/js/lib/jquery.fullPage.min.js', type: 'js', requires: ['slimscroll', 'easings']});
+        Do.add('cookie', {path: 'https://img3.doubanio.com/f/shire/90edf76423e640e2e2e3539a87d8fa1753ca41d8/js/core/cookie.js', type: 'js'});
+        Do.add('_', {path: 'https://img3.doubanio.com/f/ithil/b1d91086ce0b48ca8f58c0b41dfc9b4ebb46271c/js/lib/lodash.min.js', type: 'js'});
+    </script>
 </head>
 
-<body id="loading">
+<body id="loading1">
 
 <div class="msk">
     <div class="wp">
@@ -39,32 +59,10 @@
     </div>
 </header>
 
-<div id="main"/>
+<div id="main"></div>
 
 <div id="back-to-top"></div>
 
 <script src="/javascripts/app.js"></script>
-
-<script type="text/javascript">
-    Do.add('jquery', {path: 'https://img3.doubanio.com/f/ithil/e9d9543ebc06f2964039a2e94898f84ce77fc070/js/lib/jquery.js', type: 'js'});
-    Do.add('transform', {path: 'https://img3.doubanio.com/f/ithil/b90a614f90721bdd28eacd7475961c5033c67228/js/lib/jquery.transform2d.js', type: 'js'});
-    Do.add('pause', {path: 'https://img3.doubanio.com/f/ithil/edd388d346d4f7f2a54b27ec60d7d50dacb69dc5/js/lib/jquery.pause.min.js', type: 'js'});
-    Do.add('touchSwipe', {path: 'https://img3.doubanio.com/f/ithil/27365d2741dbe06ccb3ef29f6d2c9688f46f9ed9/js/lib/jquery.touchSwipe.min.js', type: 'js'});
-    Do.add('keyframes', {path: 'https://img3.doubanio.com/f/ithil/28e920e4ad49ce913f7a64967bf45720af82a7eb/js/lib/jquery.keyframes.min.js', type: 'js'});
-    Do.add('easings', {path: 'https://img3.doubanio.com/f/ithil/3d1cab7cd2d1c80a668b3e544660ae5b5a0363d6/js/lib/jquery.easings.min.js', type: 'js'});
-    Do.add('lettering', {path: 'https://img3.doubanio.com/f/ithil/9e89a4428075e6c1aac5280e65d03b7ba3f5595e/js/lib/jquery.lettering.js', type: 'js'});
-    Do.add('textillate', {path: 'https://img3.doubanio.com/f/ithil/41dea21f8ccf5226b39322d9a337c69b50c40b8c/js/lib/jquery.textillate.js', type: 'js', requires:['lettering']});
-    Do.add('slimscroll', {path: 'https://img3.doubanio.com/f/ithil/89147b622b289281b542d80d6773765762f742ee/js/lib/jquery.slimscroll.min.js', type: 'js'});
-    Do.add('fullPage', {path: 'https://img3.doubanio.com/f/ithil/239335012508e5e0ac83697970e89adf5621aa93/js/lib/jquery.fullPage.min.js', type: 'js', requires: ['slimscroll', 'easings']});
-    Do.add('cookie', {path: 'https://img3.doubanio.com/f/shire/90edf76423e640e2e2e3539a87d8fa1753ca41d8/js/core/cookie.js', type: 'js'});
-    Do.add('_', {path: 'https://img3.doubanio.com/f/ithil/b1d91086ce0b48ca8f58c0b41dfc9b4ebb46271c/js/lib/lodash.min.js', type: 'js'});
-
-    var isMobile = 'False' === 'True';
-    var DB_CONF = {
-        isLogin: 'True' === 'True'
-    };
-</script>
-
-<script src="https://img3.doubanio.com/f/ithil/02d77cfcbdb37694d81e8cba9bc1ecfc88297160/js/activity/index.js"></script>
 </body>
 </html>

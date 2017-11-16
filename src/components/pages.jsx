@@ -24,9 +24,6 @@ var Pages = React.createClass({
         getInitialState: function () {
             return {data: {}, page: this.props.page};
         },
-        componentDidMount: function () {
-            this._getReport();
-        },
         render: function () {
             if (JSON.stringify(this.state.data) == "{}") {
                 return this._getDefaultDiv()

@@ -32,7 +32,7 @@ var Page4 = React.createClass({
                                         <div className="sub-title-wrapper clearfix">
                                             <div className="sub-title">
                                                 <h2 className="min keyWord animated infinite swing" >
-                                                    {this.props.data.time_spend_on_rea}
+                                                    {this.props.data.time_spend_on_rea.hours}
                                                 </h2>
                                                 <h3 className="min">
                                                     hours
