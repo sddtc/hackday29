@@ -6,4 +6,6 @@
 ```
 
 ## get report data example
-http://localhost:9999/#/report/1/#{page_index}
+<http://localhost:9999/#/report/#{consumer_id}/#{page_index}>
+
+Now we support 3 consumers, consumer IDs are `1000001`, `1000002` and `1000003`
