@@ -15,7 +15,6 @@ var routes = {
     '/report': {
         '/:id': {
             '/:pageId': async function (id, pageId) {
-                id = 1000001;
                 consumerId = id;
                 pageIndex= parseInt(pageId);
                 // let report = await store.getReport(id);
