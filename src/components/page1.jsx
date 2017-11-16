@@ -6,7 +6,6 @@ var Page1 = React.createClass({
       const maskStyle={opacity: 0.5};
     return (
         <div className="section top-10-widget " data-anchor="1">
-
             <div className="bg enable-animate">
                 <div data-src="assets/images/landing-times.jpg" className="bg-img"></div>
                 <div className="mask" style={maskStyle}></div>
@@ -32,7 +31,7 @@ var Page1 = React.createClass({
                                     <td className="title-content-wrapper">
                                         <div className="sub-title-wrapper clearfix">
                                             <div className="sub-title">
-                                                <h2 className="min keyWord" >
+                                                <h2 className="min keyWord shake-constant shake-chunk" >
                                                     {this.props.data.login_count}
                                                 </h2>
                                                 <h3 className="min">
@@ -46,8 +45,13 @@ var Page1 = React.createClass({
                             </table>
                         </div>
                     </div>
-                    <div className="description-section ">
-                        <span className="description" >2017, you keep a really good relationship with REA. REA remembers everyday you login.</span>
+                    <div className="description-section message-description">
+                        <p className="description">
+                            2017, you keep a really good relationship with REA.
+                        </p>
+                        <p className="description">
+                            REA remembers everyday you login.
+                        </p>
                     </div>
                 </div>
                 <div className="bottom-section">
