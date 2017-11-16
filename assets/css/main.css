@@ -70,7 +70,12 @@ h1.loader {
 }
 
 .animated.bounceIn,
-.animated.bounceInDown {
+.animated.bounceInDown,
+.animated.wobble,
+.animated.fadeInLeft,
+.animated.zoomInUp,
+.animated.lightSpeedIn,
+.animated.wobble {
     animation-duration: 2s;
 }
 
