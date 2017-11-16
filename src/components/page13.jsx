@@ -10,11 +10,11 @@ var Page13 = React.createClass({
         const maskStyle = {opacity: 0.2};
         return (
             <div className="section top-10-widget " data-anchor="13">
-                <img className="bg enable-animate cb-slideshow">
-                    <div data-src="assets/images/shared.jpg" className="bg-img"></div>
+                <div className="bg enable-animate cb-slideshow">
+                    <img data-src="assets/images/shared.jpg" className="bg-img"></img>
                     <div className="mask" style={maskStyle}></div>
                     <div className="bottom-mask"></div>
-                </img>
+                </div>
 
                 <div className="content wrapper">
                     <div className="top-section clearfix ">
