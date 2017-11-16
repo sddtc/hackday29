@@ -46,14 +46,16 @@ var Page5 = React.createClass({
                             </div>
                         </div>
                         <div className="description-section message-description">
-                            <p className="description">
-                                So glad that you are really interested at me!
-                            </p>
+                            <div className="oneLine">
+                                <p className="description">So glad that you are really&nbsp;</p>
+                                <p className="n1">interested</p>
+                                <p>&nbsp;at me.</p>
+                            </div>
                             <p>
                                 So many saved searches!
                             </p>
                             <p>
-                                We will get you updated without delay!
+                                We will get you updated without delay.
                             </p>
                         </div>
                     </div>
