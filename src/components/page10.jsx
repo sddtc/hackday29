@@ -1,6 +1,11 @@
 var React = require('react');
 
 var Page10 = React.createClass({
+    _goNext: function (consumerId) {
+        console.log(consumerId);
+        location.href = "#/report/" + consumerId + "/" + 11;
+    },
+
     render: function () {
         const maskStyle = {opacity: 0.5};
         return (
@@ -60,7 +65,7 @@ var Page10 = React.createClass({
                         <div className="horizontal-line"></div>
                     </div>
                 </div>
-                <img src="./assets/images/down.png" alt="Down" className="down-btn"/>
+                <img src="./assets/images/down.png" alt="Down" className="down-btn" onClick={(e) => (e.preventDefault(), this._goNext(1000001))}></img>
             </div>
         );
     }
