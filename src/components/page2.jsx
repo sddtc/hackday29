@@ -48,7 +48,7 @@ var Page2 = React.createClass({
                         </p>
                         <div className="oneLine">
                              <p>You came here to&nbsp;</p>
-                             <p>join us.</p>
+                             <p className="n1">join us.</p>
                          </div>
                         <p>From that day onwards, we would accompany you through the wonderful days. </p>
                     </div>

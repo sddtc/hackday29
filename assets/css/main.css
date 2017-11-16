@@ -151,3 +151,8 @@ h1.loader {
 .oneLine p {
     display: inline-block;
 }
+
+.n1 {
+    color: #F97070;
+    font-family: cursive;
+}
