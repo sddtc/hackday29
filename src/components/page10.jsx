@@ -22,7 +22,7 @@ var Page10 = React.createClass({
                                     <tr className="top-column">
                                         <td colspan="2">
                                             <div className="title clearfix">
-                                                <div className="top-title">2017.**.**</div>
+                                                <div className="top-title keyWord">{this.props.data.latest_visited_at.substring(0,10)}</div>
                                                 <div className="bottom-title">You must slept late.</div>
                                             </div>
                                         </td>
@@ -32,7 +32,7 @@ var Page10 = React.createClass({
                                             <div className="sub-title-wrapper clearfix">
                                                 <div className="sub-title">
                                                     <h2 className="min keyWord animated infinite bounceInDown">
-                                                        {this.props.data.latest_visited_at}
+                                                        {this.props.data.latest_visited_at.substring(11,19)} AM
                                                     </h2>
                                                 </div>
                                             </div>
@@ -44,7 +44,7 @@ var Page10 = React.createClass({
                         </div>
                         <div className="description-section message-description">
                             <p className="description">
-                                It's already {this.props.data.latest_visited_at} am but you're still viewing properties.
+                                It's already {this.props.data.latest_visited_at.substring(11,19)} AM but you're still viewing properties.
                             </p>
                             <p className="description">
                                 Warm hint:

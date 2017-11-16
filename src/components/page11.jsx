@@ -32,7 +32,10 @@ var Page11 = React.createClass({
                                             <div className="sub-title-wrapper clearfix">
                                                 <div className="sub-title">
                                                     <h2 className="min keyWord animated infinite bounceIn">
-                                                        {this.props.data.preferred_region}
+                                                        {this.props.data.preferred_region.split("-")[0]}
+                                                    </h2>
+                                                    <h2 className="min keyWord animated infinite bounceIn">
+                                                        - {this.props.data.preferred_region.split("-")[1]}
                                                     </h2>
                                                 </div>
                                             </div>

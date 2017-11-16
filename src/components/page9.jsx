@@ -32,7 +32,10 @@ var Page9 = React.createClass({
                                             <div className="sub-title-wrapper clearfix">
                                                 <div className="sub-title">
                                                     <h2 className="min keyWord animated infinite wobble" >
-                                                        {this.props.data.notifications_count.email_count}
+                                                        Emails: {this.props.data.notifications_count.email_count}
+                                                    </h2>
+                                                    <h2 className="min keyWord animated infinite wobble" >
+                                                        Push: {this.props.data.notifications_count.push_count}
                                                     </h2>
                                                     <h3 className="min">
                                                         notifications
