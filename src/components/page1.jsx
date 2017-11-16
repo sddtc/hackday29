@@ -49,9 +49,12 @@ var Page1 = React.createClass({
                         <p className="description">
                             2017, you keep a really good relationship with REA.
                         </p>
-                        <p className="description">
-                            REA remembers everyday you login.
-                        </p>
+                        <div className="oneLine">
+                            <p className="description">
+                                REA remembers everyday you&nbsp;
+                            </p>
+                            <p className="n1">login</p><p>.</p>
+                        </div>
                     </div>
                 </div>
                 <div className="bottom-section">

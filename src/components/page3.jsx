@@ -58,10 +58,12 @@ var Page3 = React.createClass({
                                 </div>
                             </div>
                             <div className="description-section message-description">
-                                <p className="description">
-                                    It must be a really special property for you, since you have viewed this property so many times.
-                                </p>
-                                <p>New year, just go to get it! </p>
+                                <div className="oneLine">
+                                    <p className="description">It must be a really&nbsp;</p>
+                                    <p className="n1">special</p><p>&nbsp;property for you,</p>
+                                    <p>since you have viewed this property so many times.</p>
+                                    <p className="description">New year, just go to get it! </p>
+                                </div>
                             </div>
                         </div>
                         <div className="bottom-section">
