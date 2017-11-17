@@ -1,11 +1,7 @@
 var React = require('react');
+var DownClick = require('./downclick');
 
 var Page8 = React.createClass({
-    _goNext: function (consumerId) {
-        console.log(consumerId);
-        location.href = "#/report/" + consumerId + "/" + 9;
-    },
-
     render: function () {
         const maskStyle = {opacity: 0.5};
         return (
@@ -69,7 +65,7 @@ var Page8 = React.createClass({
                     </div>
                 </div>
 
-                <img src="./assets/images/down.png" alt="Down" className="down-btn" onClick={(e) => (e.preventDefault(), this._goNext(1000001))}></img>
+                <DownClick consumer={this.props.consumer} page={this.props.page}></DownClick>
             </div>
         );
     }

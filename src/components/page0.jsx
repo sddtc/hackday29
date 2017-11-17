@@ -1,4 +1,5 @@
 var React = require('react');
+var DownClick = require('./downclick')
 
 
 var Page0 = React.createClass({
@@ -32,7 +33,7 @@ var Page0 = React.createClass({
                   </div>
               </div>
 
-              <img src="./assets/images/down.png" alt="Down" className="down-btn" onClick={(e) => (e.preventDefault(), this._goNext(1000001))}></img>
+                 <DownClick consumer={this.props.consumer} page={this.props.page}></DownClick>
 
           </div>
         );
