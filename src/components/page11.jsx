@@ -37,10 +37,10 @@ var Page11 = React.createClass({
                                         <td className="title-content-wrapper">
                                             <div className="sub-title-wrapper clearfix">
                                                 <div className="sub-title">
-                                                    <h2 className="min keyWord animated infinite bounceIn">
+                                                    <h2 className="min keyWord animated infinite bounceIn change-color">
                                                         {this.props.data.preferred_region.split("-")[0]}
                                                     </h2>
-                                                    <h2 className="min keyWord animated infinite bounceIn">
+                                                    <h2 className="min keyWord animated infinite bounceIn change-color">
                                                         - {this.props.data.preferred_region.split("-")[1]}
                                                     </h2>
                                                 </div>

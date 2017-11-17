@@ -3,6 +3,11 @@
   color: rgb(213, 75, 64);
 }
 
+.change-color {
+    font-family: monospace;
+    color: rgb(254, 255, 15);
+}
+
 .min .keyWord:hover {
 	color: white;
 }
