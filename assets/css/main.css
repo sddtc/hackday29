@@ -190,7 +190,7 @@ h1.loader {
 
 @-webkit-keyframes imageAnimation {
     0% {
-        opacity: 0.3;
+        opacity: 0.6;
         -webkit-animation-timing-function: ease-in;
     }
     8% {
