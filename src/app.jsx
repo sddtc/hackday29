@@ -43,7 +43,7 @@ var router = Router(routes);
 router.init();
 
 function goDown() {
-    pageIndex = pageIndex + 1;
+    pageIndex = pageIndex == 15 ? 0 : pageIndex + 1;
     location.href = "#/report/" + consumerId + "/" + pageIndex
 }
 
