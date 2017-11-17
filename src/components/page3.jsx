@@ -26,7 +26,7 @@ var Page3 = React.createClass({
 
 
                     <div className="bg enable-animate cb-slideshow">
-                        <img data-src="assets/images/most-visited.jpg" className="bg-img"></img>
+                        <img data-src="assets/images/most-visited.jpeg" className="bg-img"></img>
                         <div className="mask" style={maskStyle} ></div>
                         <div className="bottom-mask"></div>
                     </div>
