@@ -12,7 +12,8 @@ var Page11 = React.createClass({
         return (
             <div className="section top-10-widget " data-anchor="11">
 
-                <div className="bg enable-animate" style={bgStyle}>
+                <div className="bg enable-animate cb-slideshow" style={bgStyle}>
+                    <img data-src="assets/images/map.png" className="bg-img"></img>
                     <div className="mask" style={maskStyle}></div>
                     <div className="bottom-mask"></div>
                 </div>
